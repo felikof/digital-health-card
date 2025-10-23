@@ -33,12 +33,12 @@ export const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" variant="hero" className="group">
+              <Button size="lg" variant="hero" className="group" onClick={() => window.location.href = '/auth'}>
                 Commencer
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 hover:border-primary">
-                Voir la démo
+              <Button size="lg" variant="outline" className="border-primary/30 hover:border-primary" onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>
+                En savoir plus
               </Button>
             </div>
 
