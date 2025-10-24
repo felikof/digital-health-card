@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Consultation from "./pages/Consultation";
+import Ordonnance from "./pages/Ordonnance";
 import ScanQR from "./pages/ScanQR";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/auth" element={<Auth />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/consultation" element={<Consultation />} />
+          <Route path="/ordonnance" element={<Ordonnance />} />
           <Route path="/scan-qr" element={<ScanQR />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
